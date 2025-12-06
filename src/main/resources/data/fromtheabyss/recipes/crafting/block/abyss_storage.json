@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "A": {
+      "item": "minecraft:hopper"
+    },
+    "B": {
+      "item": "fromtheabyss:abyss_crystal"
+    },
+    "C": {
+      "item": "fromtheabyss:abyss_alloy_block"
+    },
+    "D": {
+      "item": "fromtheabyss:abyss_anchor"
+    }
+  },
+  "pattern": [
+    "ABA",
+    "CDC",
+    " B "
+  ],
+  "result": {
+    "count": 1,
+    "item": "fromtheabyss:abyss_storage"
+  },
+  "show_notification": true
+}

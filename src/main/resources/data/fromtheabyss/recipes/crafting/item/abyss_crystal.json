@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item":"minecraft:amethyst_shard"
+    },
+    {
+      "tag":"forge:gems/lapis"
+    }
+  ],
+  "result": {
+    "item": "fromtheabyss:abyss_crystal"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.elevensef.fromtheabyss.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "refmap": "fromtheabyss.refmap.json",
+  "mixins": [
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

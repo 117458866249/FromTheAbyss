@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "A": {
+      "item": "fromtheabyss:abyss_crystal"
+    },
+    "B": {
+      "item": "fromtheabyss:abyss_anchor"
+    },
+    "C": {
+      "item": "minecraft:chain"
+    }
+  },
+  "pattern": [
+    "  A",
+    " B ",
+    "C  "
+  ],
+  "result": {
+    "count": 1,
+    "item": "fromtheabyss:bedrock_breaker"
+  },
+  "show_notification": true
+}
