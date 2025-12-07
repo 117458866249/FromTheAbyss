@@ -5,6 +5,7 @@ import com.elevensef.fromtheabyss.custom.block.AbyssIntegrationerBlock;
 import com.elevensef.fromtheabyss.custom.blockitem.AbyssIntegrationer;
 import com.elevensef.fromtheabyss.custom.blockitem.AbyssStorage;
 import com.elevensef.fromtheabyss.custom.blockitem.AbyssStorageOutput;
+import com.elevensef.fromtheabyss.custom.item.AbyssFissure;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
@@ -31,10 +32,6 @@ public class ModBlock {
                     .requiresCorrectToolForDrops()
             ));
 
-    public static final RegistryObject<Block> ABYSS_FISSURE = registerBlock("abyss_fissure",
-            ()-> new Block(BlockBehaviour.Properties.copy(Blocks.BEDROCK)
-            ));
-
 
 
 
@@ -48,6 +45,15 @@ public class ModBlock {
 
     public static final RegistryObject<Item> ABYSS_INTEGRATIONER = ModItem.ITEMS.register("abyss_integrationer",
             () -> new AbyssIntegrationer(ABYSS_INTEGRATIONER_B.get(), new Item.Properties()));
+
+
+
+    public static final RegistryObject<Block> ABYSS_FISSURE_B = BLOCKS.register("abyss_fissure",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.BEDROCK)
+            ));
+
+    public static final RegistryObject<Item> ABYSS_FISSURE = ModItem.ITEMS.register("abyss_fissure",
+            () -> new AbyssFissure(ABYSS_FISSURE_B.get(), new Item.Properties()));
 
 
 

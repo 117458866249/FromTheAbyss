@@ -20,6 +20,7 @@
     "fromtheabyss.tooltip.abyss_anchor":"§f在 §6y=-64 §f的一块基岩上§e（即你的y坐标为-63时，你脚下的那块基岩）\n\n§f投掷一个 §5§l紫水晶 §f，\n\n再空手右键 §7§l基岩，\n§f那块基岩将变成 §9§lStrv m/40 L§1型深渊裂隙\n\n§f此时，在 §9§lStrv m/40 L型§1深渊裂隙 §f之上放置 §9§lStrv m/38型§1深渊合金块 §f，使用 §9§lStrv m/38型§1深渊水晶 §f交互 §9§l深渊§1合金块 §f。\n\n随着 §b§l合金块与水晶 §f坠入虚空，§f从地底回来的，便是虚无之 §9§lStrv m/40 L型§1虚空锚 §f...",
     "fromtheabyss.tooltip.abyss_storage":"§c只能§f在 §9§lStrv m/40 L型§1深渊裂隙 §f上面的一格方块§e放置§f！\n\n将物品使用 §e漏斗 §f等将传输元件输入 §9§lStrv m/41 §1I型深渊物品存储器 §f后，\n\n可以使用带有过滤的传输元件（例如有填充物的 §e漏斗 §f）从 §9§lStrv m/41 §1I型深渊物品提取器 §f提取物品",
     "fromtheabyss.tooltip.abyss_storage_output":"§c只要y轴上有§ §9§lStrv m/40 L型§1深渊裂隙 §e即可使用§f！\n\n将物品使用 §e漏斗 §f等将传输元件输入 §9§lStrv m/41 §1I型深渊物品存储器 §f后，\n\n可以使用带有过滤的传输元件（例如有填充物的 §e漏斗 §f）从 §9§lStrv m/41 §1I型深渊物品提取器 §f提取物品\n\n不要尝试使用输入元器件输入，§l深渊§e会蚀去所有物品§f...",
+    "fromtheabyss.tooltip.abyss_fissure":"§f在 §6y=-64 §f的一块基岩上§e（即你的y坐标为-63时，你脚下的那块基岩）\n\n§f投掷一个 §5§l紫水晶 §f，\n\n再空手右键 §7§l基岩，\n§f那块基岩将变成 §9§lStrv m/40 L§1型深渊裂隙\n\n如果你处在创造模式等获取该方块的方块物品途径，你只能在y=-64的地方放置它",
     "fromtheabyss.tooltip.bedrock_breaker":"破坏 §6y坐标 §f不为-64的 §e基岩§f",
 
     "fromtheabyss.global.tooltip_shift": "按住 §eShift §f以显示更多信息..."

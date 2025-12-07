@@ -12,7 +12,6 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BlockEntity;
-import net.minecraft.world.level.block.entity.HopperBlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.common.capabilities.Capability;
 import net.minecraftforge.common.capabilities.ForgeCapabilities;
@@ -22,8 +21,8 @@ import net.minecraftforge.items.ItemStackHandler;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
-public class AbyssIntegrationerEntity extends BlockEntity /*implements MenuProvider*/ {
-    private final ItemStackHandler itemHandler = new ItemStackHandler(3){
+public class AbyssIntegrationerEntity extends BlockEntity {
+    private final ItemStackHandler itemHandler = new ItemStackHandler(2){
         @Override
         protected void onContentsChanged(int slot){
             setChanged();
@@ -135,7 +134,6 @@ public class AbyssIntegrationerEntity extends BlockEntity /*implements MenuProvi
         if (hasRecipe(pEntity)) {
             pEntity.itemHandler.extractItem(0,1,false);
             pEntity.itemHandler.extractItem(1,1,false);
-            // pEntity.itemHandler.setStackInSlot(2,new ItemStack(ModItem.ABYSS_ALLOY.get(),pEntity.itemHandler.getStackInSlot(2).getCount() + 1));
             Containers.dropContents(pEntity.level,dropPos(pEntity),dropItem);
             pEntity.resetProgress();
         }
@@ -155,14 +153,6 @@ public class AbyssIntegrationerEntity extends BlockEntity /*implements MenuProvi
         boolean hasLapis2 = entity.itemHandler.getStackInSlot(1).getItem() == Items.LAPIS_LAZULI;
         boolean hasDeepSlate2 = entity.itemHandler.getStackInSlot(0).getItem() == Items.DEEPSLATE;
 
-        return ((hasLapis && hasDeepSlate) || (hasLapis2 && hasDeepSlate2)) && canInsertAmountIntoOutputSlot(inventory) && canInsertItemIntoOutputSlot(inventory,new ItemStack(ModItem.ABYSS_ALLOY.get(),1));
-    }
-
-    private static boolean canInsertItemIntoOutputSlot(SimpleContainer inventory, ItemStack stack) {
-        return inventory.getItem(2).getItem() == stack.getItem() || inventory.getItem(2).isEmpty();
-    }
-
-    private static boolean canInsertAmountIntoOutputSlot(SimpleContainer inventory) {
-        return inventory.getItem(2).getMaxStackSize() > inventory.getItem(2).getCount();
+        return (hasLapis && hasDeepSlate) || (hasLapis2 && hasDeepSlate2);
     }
 }
