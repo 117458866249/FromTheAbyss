@@ -1,8 +1,12 @@
 {
     "creativetab.fromtheabyss_tab":"From The Abyss",
 
+
+
     "fromtheabyss.tran.abyss_storage":"§c只能§f在 §9§lStrv m/40 L型§1深渊裂隙 §f上面一格方块§e放置§f！",
     "fromtheabyss.tran.abyss_storage_output":"§c只要§fy轴上有§ §9§lStrv m/40 L型§1深渊裂隙 §e即可使用§f！",
+
+
 
     "block.fromtheabyss.abyss_integrationer":"Strv m/38型深渊催化剂",
     "block.fromtheabyss.abyss_alloy_block":"Strv m/38型深渊合金块",
@@ -10,18 +14,47 @@
     "block.fromtheabyss.abyss_storage":"Strv m/41 I型深渊物品存储器",
     "block.fromtheabyss.abyss_storage_output":"Strv m/41 I型深渊物品输出仪",
 
+
+
     "item.fromtheabyss.abyss_alloy":"Strv m/38型深渊合金",
     "item.fromtheabyss.abyss_crystal":"Strv m/38型深渊水晶",
     "item.fromtheabyss.abyss_breaker":"Strv m/38型深渊拆除仪",
     "item.fromtheabyss.abyss_anchor":"Strv m/40 L型虚空锚",
     "item.fromtheabyss.bedrock_breaker":"Strv m/40 L型基岩破坏仪",
 
-    "fromtheabyss.tooltip.abyss_integrationer":"§f使用 §l§b漏斗 §f等元器件输入 §l§b青金石 §f与 §l§7深板岩 以§h在机器下方的那个方块生产 §9§lStrv m/38型§1深渊合金 \n§c§l注意！不要输入其它物品，【它会堵塞深渊】，使用漏斗等元器件导出那些其它物品即可。",
-    "fromtheabyss.tooltip.abyss_anchor":"§f在主世界 §6y=-64 §f的一块基岩上§e（即你的y坐标为-63时，你脚下的那块基岩）\n\n§f投掷一个 §5§l紫水晶 §f，\n\n再空手右键 §7§l基岩，\n§f那块基岩将变成 §9§lStrv m/40 L§1型深渊裂隙\n\n§6但是，其它维度的深渊太空虚了，并不需一定要y=-64的基岩...\n\n§f此时，在 §9§lStrv m/40 L型§1深渊裂隙 §f之上放置 §9§lStrv m/38型§1深渊合金块 §f，使用 §9§lStrv m/38型§1深渊水晶 §f交互 §9§l深渊§1合金块 §f。\n\n随着 §b§l合金块与水晶 §f坠入虚空，§f从地底回来的，便是虚无之 §9§lStrv m/40 L型§1虚空锚 §f...",
-    "fromtheabyss.tooltip.abyss_storage":"§c只能§f在 §9§lStrv m/40 L型§1深渊裂隙 §f上面的一格方块§e放置§f！\n\n将物品使用 §e漏斗 §f等将传输元件输入 §9§lStrv m/41 §1I型深渊物品存储器 §f后，\n\n可以使用带有过滤的传输元件（例如有填充物的 §e漏斗 §f）从 §9§lStrv m/41 §1I型深渊物品提取器 §f提取物品",
-    "fromtheabyss.tooltip.abyss_storage_output":"§c只要y轴上有§ §9§lStrv m/40 L型§1深渊裂隙 §e即可使用§f！\n\n将物品使用 §e漏斗 §f等将传输元件输入 §9§lStrv m/41 §1I型深渊物品存储器 §f后，\n\n可以使用带有过滤的传输元件（例如有填充物的 §e漏斗 §f）从 §9§lStrv m/41 §1I型深渊物品提取器 §f提取物品\n\n不要尝试使用输入元器件输入，§l深渊§e会蚀去所有物品§f...",
-    "fromtheabyss.tooltip.abyss_fissure":"§f在主世界 §6y=-64 §f的一块基岩上§e（即你的y坐标为-63时，你脚下的那块基岩）\n\n§f投掷一个 §5§l紫水晶 §f，\n\n再空手右键 §7§l基岩，\n§f那块基岩将变成 §9§lStrv m/40 L§1型深渊裂隙\n\n如果你处在创造模式等获取该方块的方块物品途径，你只能在y=-64的地方放置它\n\n§6但是，其它维度的深渊太空虚了，并不需这些要求...",
-    "fromtheabyss.tooltip.bedrock_breaker":"破坏主世界 §6y坐标 §f不为-64的 §e基岩§f\n\n§6但是，其它维度的深渊太空虚了，并不需此要求...",
+
+
+
+    "fromtheabyss.tooltip.abyss_integrationer-1":"§f使用 §l§b漏斗 §f等元器件输入 §l§b青金石 §f与 §l§7深板岩 以§h在机器下方的那个方块生产 §9§lStrv m/38型§1深渊合金",
+    "fromtheabyss.tooltip.abyss_integrationer-2":"§c§l注意！不要输入其它物品，【它会堵塞深渊】，使用漏斗等元器件导出那些其它物品即可。",
+
+    "fromtheabyss.tooltip.abyss_anchor-1":"§f在主世界 §6y=-64 §f的一块基岩上§e（即你的y坐标为-63时，你脚下的那块基岩）",
+    "fromtheabyss.tooltip.abyss_anchor-2":"§f投掷一个 §5§l紫水晶 §f，",
+    "fromtheabyss.tooltip.abyss_anchor-3":"再空手右键 §7§l基岩，",
+    "fromtheabyss.tooltip.abyss_anchor-4":"§f那块基岩将变成 §9§lStrv m/40 L§1型深渊裂隙",
+    "fromtheabyss.tooltip.abyss_anchor-5":"§6但是，其它维度的深渊太空虚了，并不需一定要y=-64的基岩...",
+    "fromtheabyss.tooltip.abyss_anchor-6":"§f此时，在 §9§lStrv m/40 L型§1深渊裂隙 §f之上放置 §9§lStrv m/38型§1深渊合金块 §f，使用 §9§lStrv m/38型§1深渊水晶 §f交互 §9§l深渊§1合金块 §f。",
+    "fromtheabyss.tooltip.abyss_anchor-7":"随着 §b§l合金块与水晶 §f坠入虚空，§f从地底回来的，便是虚无之 §9§lStrv m/40 L型§1虚空锚 §f...",
+
+    "fromtheabyss.tooltip.abyss_storage-1":"§c只能§f在 §9§lStrv m/40 L型§1深渊裂隙 §f上面的一格方块§e放置§f！",
+    "fromtheabyss.tooltip.abyss_storage-2":"将物品使用 §e漏斗 §f等将传输元件输入 §9§lStrv m/41 §1I型深渊物品存储器 §f后，",
+    "fromtheabyss.tooltip.abyss_storage-3":"可以使用带有过滤的传输元件（例如有填充物的 §e漏斗 §f）从 §9§lStrv m/41 §1I型深渊物品提取器 §f提取物品",
+
+    "fromtheabyss.tooltip.abyss_storage_output-1":"§c只要y轴上有§ §9§lStrv m/40 L型§1深渊裂隙 §e即可使用§f！",
+    "fromtheabyss.tooltip.abyss_storage_output-2":"将物品使用 §e漏斗 §f等将传输元件输入 §9§lStrv m/41 §1I型深渊物品存储器 §f后，",
+    "fromtheabyss.tooltip.abyss_storage_output-3":"可以使用带有过滤的传输元件（例如有填充物的 §e漏斗 §f）从 §9§lStrv m/41 §1I型深渊物品提取器 §f提取物品",
+
+    "fromtheabyss.tooltip.abyss_fissure-1":"§f在主世界 §6y=-64 §f的一块基岩上§e（即你的y坐标为-63时，你脚下的那块基岩）",
+    "fromtheabyss.tooltip.abyss_fissure-2":"§f投掷一个 §5§l紫水晶 §f，",
+    "fromtheabyss.tooltip.abyss_fissure-3":"再空手右键 §7§l基岩，",
+    "fromtheabyss.tooltip.abyss_fissure-4":"§f那块基岩将变成 §9§lStrv m/40 L§1型深渊裂隙",
+    "fromtheabyss.tooltip.abyss_fissure-5":"如果你处在创造模式等获取该方块的方块物品途径，你只能在y=-64的地方放置它",
+    "fromtheabyss.tooltip.abyss_fissure-6":"§6但是，其它维度的深渊太空虚了，直接在任何地方这样的基岩这样做就好...",
+
+    "fromtheabyss.tooltip.bedrock_breaker-1":"破坏主世界 §6y坐标 §f不为-64的 §e基岩§f",
+    "fromtheabyss.tooltip.bedrock_breaker-2":"§6但是，其它维度的深渊太空虚了，可以破坏任何基岩...",
+
+
 
     "fromtheabyss.global.tooltip_shift": "按住 §eShift §f以显示更多信息..."
 }

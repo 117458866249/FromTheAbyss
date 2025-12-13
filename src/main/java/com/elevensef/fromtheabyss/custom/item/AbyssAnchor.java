@@ -20,7 +20,17 @@ public class AbyssAnchor extends Item {
     @Override
     public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
         if(Screen.hasShiftDown()){
-            pTooltipComponents.add(Component.translatable("fromtheabyss.tooltip.abyss_anchor").withStyle(ChatFormatting.WHITE));
+            pTooltipComponents.add(Component.translatable("fromtheabyss.tooltip.abyss_anchor-1").withStyle(ChatFormatting.WHITE));
+            pTooltipComponents.add(Component.translatable("fromtheabyss.tooltip.abyss_anchor-2").withStyle(ChatFormatting.WHITE));
+            pTooltipComponents.add(Component.literal("\n").withStyle(ChatFormatting.WHITE));
+            pTooltipComponents.add(Component.translatable("fromtheabyss.tooltip.abyss_anchor-3").withStyle(ChatFormatting.WHITE));
+            pTooltipComponents.add(Component.translatable("fromtheabyss.tooltip.abyss_anchor-4").withStyle(ChatFormatting.WHITE));
+            pTooltipComponents.add(Component.literal("\n").withStyle(ChatFormatting.WHITE));
+            pTooltipComponents.add(Component.translatable("fromtheabyss.tooltip.abyss_anchor-5").withStyle(ChatFormatting.WHITE));
+            pTooltipComponents.add(Component.literal("\n").withStyle(ChatFormatting.WHITE));
+            pTooltipComponents.add(Component.translatable("fromtheabyss.tooltip.abyss_anchor-6").withStyle(ChatFormatting.WHITE));
+            pTooltipComponents.add(Component.literal("\n").withStyle(ChatFormatting.WHITE));
+            pTooltipComponents.add(Component.translatable("fromtheabyss.tooltip.abyss_anchor-7").withStyle(ChatFormatting.WHITE));
         }else{
             pTooltipComponents.add(Component.translatable("fromtheabyss.global.tooltip_shift").withStyle(ChatFormatting.WHITE));
         }

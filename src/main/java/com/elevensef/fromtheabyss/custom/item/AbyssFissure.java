@@ -21,7 +21,13 @@ public class AbyssFissure extends BlockItem {
     @Override
     public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
         if(Screen.hasShiftDown()){
-            pTooltipComponents.add(Component.translatable("fromtheabyss.tooltip.abyss_fissure").withStyle(ChatFormatting.WHITE));
+            pTooltipComponents.add(Component.translatable("fromtheabyss.tooltip.abyss_fissure-1").withStyle(ChatFormatting.WHITE));
+            pTooltipComponents.add(Component.translatable("fromtheabyss.tooltip.abyss_fissure-2").withStyle(ChatFormatting.WHITE));
+            pTooltipComponents.add(Component.translatable("fromtheabyss.tooltip.abyss_fissure-3").withStyle(ChatFormatting.WHITE));
+            pTooltipComponents.add(Component.translatable("fromtheabyss.tooltip.abyss_fissure-4").withStyle(ChatFormatting.WHITE));
+            pTooltipComponents.add(Component.literal("\n").withStyle(ChatFormatting.WHITE));
+            pTooltipComponents.add(Component.translatable("fromtheabyss.tooltip.abyss_fissure-5").withStyle(ChatFormatting.WHITE));
+            pTooltipComponents.add(Component.translatable("fromtheabyss.tooltip.abyss_fissure-6").withStyle(ChatFormatting.WHITE));
         }else{
             pTooltipComponents.add(Component.translatable("fromtheabyss.global.tooltip_shift").withStyle(ChatFormatting.WHITE));
         }

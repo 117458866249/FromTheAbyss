@@ -3,9 +3,6 @@ package com.elevensef.fromtheabyss.custom.item;
 import net.minecraft.ChatFormatting;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.network.chat.Component;
-import net.minecraft.world.InteractionHand;
-import net.minecraft.world.InteractionResultHolder;
-import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
@@ -23,7 +20,8 @@ public class BedrockBreaker extends Item {
     @Override
     public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
         if(Screen.hasShiftDown()){
-            pTooltipComponents.add(Component.translatable("fromtheabyss.tooltip.bedrock_breaker").withStyle(ChatFormatting.WHITE));
+            pTooltipComponents.add(Component.translatable("fromtheabyss.tooltip.bedrock_breaker-1").withStyle(ChatFormatting.WHITE));
+            pTooltipComponents.add(Component.translatable("fromtheabyss.tooltip.bedrock_breaker-2").withStyle(ChatFormatting.WHITE));
         }else{
             pTooltipComponents.add(Component.translatable("fromtheabyss.global.tooltip_shift").withStyle(ChatFormatting.WHITE));
         }

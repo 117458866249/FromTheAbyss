@@ -21,7 +21,11 @@ public class AbyssStorageOutput extends BlockItem {
     @Override
     public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
         if(Screen.hasShiftDown()){
-            pTooltipComponents.add(Component.translatable("fromtheabyss.tooltip.abyss_storage_output").withStyle(ChatFormatting.WHITE));
+            pTooltipComponents.add(Component.translatable("fromtheabyss.tooltip.abyss_storage_output-1").withStyle(ChatFormatting.WHITE));
+            pTooltipComponents.add(Component.literal("\n").withStyle(ChatFormatting.WHITE));
+            pTooltipComponents.add(Component.translatable("fromtheabyss.tooltip.abyss_storage_output-2").withStyle(ChatFormatting.WHITE));
+            pTooltipComponents.add(Component.literal("\n").withStyle(ChatFormatting.WHITE));
+            pTooltipComponents.add(Component.translatable("fromtheabyss.tooltip.abyss_storage_output-3").withStyle(ChatFormatting.WHITE));
         }else{
             pTooltipComponents.add(Component.translatable("fromtheabyss.global.tooltip_shift").withStyle(ChatFormatting.WHITE));
         }

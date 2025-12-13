@@ -30,11 +30,15 @@ public class BedrockBreaker extends Block {
         BlockState state = level.getBlockState(pos);
 
         if (!level.isClientSide) {
-            if (state.is(Blocks.BEDROCK) && item.is(ModItem.BEDROCK_BREAKER.get()) && hand == InteractionHand.MAIN_HAND) {
+            if (state.is(Blocks.BEDROCK) && item.is(ModItem.BEDROCK_BREAKER.get()) && hand == InteractionHand.MAIN_HAND && level.dimension() == Level.OVERWORLD) {
                 if (pos.getY() > -64){
                     player.swing(hand);
                     level.destroyBlock(pos,false);
                 }
+            }
+            if (state.is(Blocks.BEDROCK) && item.is(ModItem.BEDROCK_BREAKER.get()) && hand == InteractionHand.MAIN_HAND && !(level.dimension() == Level.OVERWORLD)){
+                player.swing(hand);
+                level.destroyBlock(pos,false);
             }
         }
     }
