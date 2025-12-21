@@ -1,6 +1,6 @@
 package com.elevensef.fromtheabyss.custom.block;
 
-import com.elevensef.fromtheabyss.custom.blockentity.AbyssIntegrationerEntity;
+import com.elevensef.fromtheabyss.custom.blockentity.abyssintegrationer.AbyssIntegrationerEntity;
 import com.elevensef.fromtheabyss.register.ModBlockEntity;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.Level;

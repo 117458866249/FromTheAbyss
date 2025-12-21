@@ -1,4 +1,4 @@
-package com.elevensef.fromtheabyss.custom.item;
+package com.elevensef.fromtheabyss.custom.blockitem;
 
 import net.minecraft.ChatFormatting;
 import net.minecraft.client.gui.screens.Screen;
@@ -27,7 +27,6 @@ public class AbyssFissure extends BlockItem {
             pTooltipComponents.add(Component.translatable("fromtheabyss.tooltip.abyss_fissure-4").withStyle(ChatFormatting.WHITE));
             pTooltipComponents.add(Component.literal("\n").withStyle(ChatFormatting.WHITE));
             pTooltipComponents.add(Component.translatable("fromtheabyss.tooltip.abyss_fissure-5").withStyle(ChatFormatting.WHITE));
-            pTooltipComponents.add(Component.translatable("fromtheabyss.tooltip.abyss_fissure-6").withStyle(ChatFormatting.WHITE));
         }else{
             pTooltipComponents.add(Component.translatable("fromtheabyss.global.tooltip_shift").withStyle(ChatFormatting.WHITE));
         }

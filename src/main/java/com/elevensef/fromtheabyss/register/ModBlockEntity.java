@@ -1,7 +1,7 @@
 package com.elevensef.fromtheabyss.register;
 
 import com.elevensef.fromtheabyss.FromTheAbyss;
-import com.elevensef.fromtheabyss.custom.blockentity.AbyssIntegrationerEntity;
+import com.elevensef.fromtheabyss.custom.blockentity.abyssintegrationer.AbyssIntegrationerEntity;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;

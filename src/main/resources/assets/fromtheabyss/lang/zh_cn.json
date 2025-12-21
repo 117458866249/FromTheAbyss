@@ -48,8 +48,7 @@
     "fromtheabyss.tooltip.abyss_fissure-2":"§f投掷一个 §5§l紫水晶 §f，",
     "fromtheabyss.tooltip.abyss_fissure-3":"再空手右键 §7§l基岩，",
     "fromtheabyss.tooltip.abyss_fissure-4":"§f那块基岩将变成 §9§lStrv m/40 L§1型深渊裂隙",
-    "fromtheabyss.tooltip.abyss_fissure-5":"如果你处在创造模式等获取该方块的方块物品途径，你只能在y=-64的地方放置它",
-    "fromtheabyss.tooltip.abyss_fissure-6":"§6但是，其它维度的深渊太空虚了，直接在任何地方这样的基岩这样做就好...",
+    "fromtheabyss.tooltip.abyss_fissure-5":"§6但是，其它维度的深渊太空虚了，直接在任何地方这样的基岩这样做就好...",
 
     "fromtheabyss.tooltip.bedrock_breaker-1":"破坏主世界 §6y坐标 §f不为-64的 §e基岩§f",
     "fromtheabyss.tooltip.bedrock_breaker-2":"§6但是，其它维度的深渊太空虚了，可以破坏任何基岩...",

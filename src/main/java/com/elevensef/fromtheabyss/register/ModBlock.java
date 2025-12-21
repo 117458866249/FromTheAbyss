@@ -5,7 +5,7 @@ import com.elevensef.fromtheabyss.custom.block.AbyssIntegrationerBlock;
 import com.elevensef.fromtheabyss.custom.blockitem.AbyssIntegrationer;
 import com.elevensef.fromtheabyss.custom.blockitem.AbyssStorage;
 import com.elevensef.fromtheabyss.custom.blockitem.AbyssStorageOutput;
-import com.elevensef.fromtheabyss.custom.item.AbyssFissure;
+import com.elevensef.fromtheabyss.custom.blockitem.AbyssFissure;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;

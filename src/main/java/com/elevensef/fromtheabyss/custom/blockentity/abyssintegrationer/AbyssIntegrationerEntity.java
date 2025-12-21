@@ -1,4 +1,4 @@
-package com.elevensef.fromtheabyss.custom.blockentity;
+package com.elevensef.fromtheabyss.custom.blockentity.abyssintegrationer;
 
 import com.elevensef.fromtheabyss.register.ModBlockEntity;
 import com.elevensef.fromtheabyss.register.ModItem;
@@ -64,6 +64,8 @@ public class AbyssIntegrationerEntity extends BlockEntity {
         };
     }
 
+    //It can't have capability qwp
+    /*
     @Override
     public @NotNull <T> LazyOptional<T> getCapability(@NotNull Capability<T> cap, @Nullable Direction side) {
         if (cap == ForgeCapabilities.ITEM_HANDLER) {
@@ -72,6 +74,7 @@ public class AbyssIntegrationerEntity extends BlockEntity {
 
         return super.getCapability(cap,side);
     }
+    */
 
     @Override
     public void onLoad() {
@@ -148,11 +151,12 @@ public class AbyssIntegrationerEntity extends BlockEntity {
         for (int i = 0; i < entity.itemHandler.getSlots(); i++) {
             inventory.setItem(i, entity.itemHandler.getStackInSlot(i));
         }
-        boolean hasRightThing1InSlot0 = entity.itemHandler.getStackInSlot(0).getItem() == Items.LAPIS_LAZULI;
-        boolean hasRightThing2InSlot1 = entity.itemHandler.getStackInSlot(1).getItem() == Items.DEEPSLATE;
-        boolean hasRightThing2InSlot0 = entity.itemHandler.getStackInSlot(0).getItem() == Items.DEEPSLATE;
-        boolean hasRightThing1InSlot1 = entity.itemHandler.getStackInSlot(1).getItem() == Items.LAPIS_LAZULI;
+        boolean hasItemA = entity.itemHandler.getStackInSlot(0).getItem() == Items.LAPIS_LAZULI;
+        boolean hasItemB = entity.itemHandler.getStackInSlot(1).getItem() == Items.DEEPSLATE;
 
-        return (hasRightThing1InSlot0 && hasRightThing2InSlot1) || (hasRightThing1InSlot1 && hasRightThing2InSlot0);
+        return hasItemA && hasItemB;
+    }
+
+    private static boolean hasDrop(AbyssIntegrationerEntity pEntity){
     }
 }
