@@ -2,9 +2,15 @@ package com.elevensef.fromtheabyss.custom.blockentity.abyssintegrationer;
 
 import com.elevensef.fromtheabyss.register.ModBlockEntity;
 import com.elevensef.fromtheabyss.register.ModItem;
+import net.minecraft.client.resources.sounds.Sound;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.nbt.CompoundTag;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.sounds.SoundEvent;
+import net.minecraft.sounds.SoundSource;
+import net.minecraft.util.RandomSource;
+import net.minecraft.util.valueproviders.SampledFloat;
 import net.minecraft.world.Containers;
 import net.minecraft.world.SimpleContainer;
 import net.minecraft.world.inventory.ContainerData;
@@ -15,13 +21,18 @@ import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.common.capabilities.Capability;
 import net.minecraftforge.common.capabilities.ForgeCapabilities;
+import net.minecraftforge.common.data.SoundDefinition;
 import net.minecraftforge.common.util.LazyOptional;
 import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.items.ItemStackHandler;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.jetbrains.annotations.NotNull;
-import org.jetbrains.annotations.Nullable;
+
+import javax.annotation.Nullable;
 
 public class AbyssIntegrationerEntity extends BlockEntity {
+    private static final Logger log = LogManager.getLogger(AbyssIntegrationerEntity.class);
     private final ItemStackHandler itemHandler = new ItemStackHandler(2){
         @Override
         protected void onContentsChanged(int slot){
@@ -64,8 +75,6 @@ public class AbyssIntegrationerEntity extends BlockEntity {
         };
     }
 
-    //It can't have capability qwp
-    /*
     @Override
     public @NotNull <T> LazyOptional<T> getCapability(@NotNull Capability<T> cap, @Nullable Direction side) {
         if (cap == ForgeCapabilities.ITEM_HANDLER) {
@@ -74,7 +83,6 @@ public class AbyssIntegrationerEntity extends BlockEntity {
 
         return super.getCapability(cap,side);
     }
-    */
 
     @Override
     public void onLoad() {
@@ -124,6 +132,18 @@ public class AbyssIntegrationerEntity extends BlockEntity {
             pEntity.resetProgress();
             setChanged(level,pos,state);
         }
+        if (pEntity.progress%5==1){
+            level.playSound(
+                    null,
+                    pos.getX() + 0.5,
+                    pos.getY() + 1.0,
+                    pos.getZ() + 0.5,
+                    SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("fromtheabyss","music.machine_working")),
+                    SoundSource.VOICE,
+                    3,
+                    1
+            );
+        }
     }
 
     private void resetProgress() {
@@ -153,10 +173,9 @@ public class AbyssIntegrationerEntity extends BlockEntity {
         }
         boolean hasItemA = entity.itemHandler.getStackInSlot(0).getItem() == Items.LAPIS_LAZULI;
         boolean hasItemB = entity.itemHandler.getStackInSlot(1).getItem() == Items.DEEPSLATE;
+        boolean hasItemAAnti = entity.itemHandler.getStackInSlot(1).getItem() == Items.LAPIS_LAZULI;
+        boolean hasItemBAnti = entity.itemHandler.getStackInSlot(0).getItem() == Items.DEEPSLATE;
 
-        return hasItemA && hasItemB;
-    }
-
-    private static boolean hasDrop(AbyssIntegrationerEntity pEntity){
+        return (hasItemA && hasItemB)||(hasItemAAnti && hasItemBAnti);
     }
 }

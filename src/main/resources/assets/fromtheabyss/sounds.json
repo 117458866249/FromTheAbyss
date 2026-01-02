@@ -1,0 +1,10 @@
+{
+    "music.machine_working": {
+        "sounds": [
+            {
+                "name": "fromtheabyss:machine_working",
+                "stream": true
+            }
+        ]
+    }
+}
