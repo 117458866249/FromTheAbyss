@@ -1,5 +1,6 @@
 package com.elevensef.fromtheabyss.custom.blockentity.abyssintegrationer;
 
+import com.elevensef.fromtheabyss.FromTheAbyss;
 import com.elevensef.fromtheabyss.register.ModBlockEntity;
 import com.elevensef.fromtheabyss.register.ModItem;
 import net.minecraft.client.resources.sounds.Sound;
@@ -138,7 +139,7 @@ public class AbyssIntegrationerEntity extends BlockEntity {
                     pos.getX() + 0.5,
                     pos.getY() + 1.0,
                     pos.getZ() + 0.5,
-                    SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath("fromtheabyss","music.machine_working")),
+                    SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath(FromTheAbyss.MOD_ID,"music.machine_working")),
                     SoundSource.VOICE,
                     3,
                     1
