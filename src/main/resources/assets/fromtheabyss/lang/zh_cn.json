@@ -55,8 +55,35 @@
 
 
 
-    "frotheabyss.advancement.root.title": "From The Abyss",
-    "frotheabyss.advancement.root.desc": "模组官方网站不是warthunder.com！",
+    "advancement.fromtheabyss.root.title": "From The Abyss",
+    "advancement.fromtheabyss.root.desc": "模组官方网站不是warthunder.com！",
+
+    "advancement.fromtheabyss.root.abyss_integrationer.title": "深渊...催化剂？？！",
+    "advancement.fromtheabyss.root.abyss_integrationer.desc": "合金，来吧！获得一个Strv m/38型深渊催化剂",
+
+    "advancements.fromtheabyss.root.abyss_integrationer.abyss_alloy.title": "深渊合金",
+    "advancements.fromtheabyss.root.abyss_integrationer.abyss_alloy.desc": "把青金石和深板岩丢到深渊催化剂下面，制造一个Strv m/38型深渊合金",
+
+    "advancements.fromtheabyss.root.abyss_integrationer.abyss_alloy.abyss_alloy_block.title": "深渊合金，块！",
+    "advancements.fromtheabyss.root.abyss_integrationer.abyss_alloy.abyss_alloy_block.desc": "把它压成块更能提升初级机器稳定性！呃，对的，我的意思是Strv m/38型深渊合金块！",
+
+    "advancements.fromtheabyss.root.abyss_integrationer.abyss_alloy.abyss_alloy_block.abyss_storage.title": "深渊存储！",
+    "advancements.fromtheabyss.root.abyss_integrationer.abyss_alloy.abyss_alloy_block.abyss_storage.desc": "往深渊中存入物品，制造一个Strv m/41 I型深渊物品存储器！",
+
+    "advancements.fromtheabyss.root.abyss_integrationer.abyss_alloy.abyss_alloy_block.abyss_storage_output.title": "也是深渊存储！",
+    "advancements.fromtheabyss.root.abyss_integrationer.abyss_alloy.abyss_alloy_block.abyss_storage_output.desc": "从深渊中取出物品，制造一个Strv m/41 I型深渊物品输出仪",
+
+    "advancement.fromtheabyss.root.abyss_crystal.title": "蓝色宝石，是什么？",
+    "advancement.fromtheabyss.root.abyss_crystal.desc": "合成一个Strv m/38型深渊合金",
+
+    "advancement.fromtheabyss.root.abyss_fissure.title": "深渊裂隙",
+    "advancement.fromtheabyss.root.abyss_fissure.desc": "现在，你需要制造一个深渊裂隙。深渊裂隙需要你通过在基岩上扔一个紫水晶，再右键那个基岩以制造。如果那个基岩在主世界，其y坐标必须在-64，即您的坐标为-63时，您脚下的方块",
+
+    "advancements.fromtheabyss.root.abyss_crystal.abyss_anchor.title": "在深渊中打下锚点！",
+    "advancements.fromtheabyss.root.abyss_crystal.abyss_anchor.desc": "在Strv m/40 L型深渊裂隙之上放置Strv m/38型深渊合金块，使用Strv m/38型深渊水晶交互 深渊合金块 。随着合金块与水晶坠入虚空，从地底回来的，便是虚无之Strv m/40 L型虚空锚...",
+
+    "advancements.fromtheabyss.root.abyss_crystal.abyss_anchor.bedrock_breaker.title": "移除坑坑洼洼的基岩！",
+    "advancements.fromtheabyss.root.abyss_crystal.abyss_anchor.bedrock_breaker.desc": "获取一个Strv m/40 L型基岩破坏仪，看看它是以何种方式工作的",
 
 
 

@@ -49,7 +49,7 @@ We welcome community contributions for translations! If you'd like to help bring
 
 - **Current Version**: 1.20.1 only
 - **Minecraft Compatibility**: 1.20.1 Forge
-- **Fork Friendly**: Feel free to create移植 branches for other versions!
+- **Fork Friendly**: Feel free to create branches for other versions!
 
 ## 📄 License
 
@@ -65,4 +65,4 @@ We encourage contributions of all kinds! Whether it's:
 
 ---
 
-*Made with ❤️ by the From the Abyss development team*
+*Made with ❤️ by 1174*

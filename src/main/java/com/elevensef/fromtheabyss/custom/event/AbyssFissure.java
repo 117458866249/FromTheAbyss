@@ -40,7 +40,7 @@ public class AbyssFissure extends Block {
             if (state.is(Blocks.BEDROCK)){
                 if (hand == InteractionHand.MAIN_HAND){
                     if (item.is(Items.AIR)){
-                        Utils.runCommandForLevelAndPos("execute positioned ~ ~0.5 ~ if entity @e[type=minecraft:item,distance=..1,nbt={Item:{id:\"minecraft:amethyst_shard\"}},limit=1] run function fromtheabyss:abyss_fissure",level,pos);
+                        Utils.runCommandForLevelAndPos("execute positioned ~ ~0.5 ~ if entity @e[type=minecraft:item,distance=..1,nbt={Item:{id:\"minecraft:amethyst_shard\"}},limit=1] run function fromtheabyss:abyss_fissure.json",level,pos);
                     }
                 }
             }

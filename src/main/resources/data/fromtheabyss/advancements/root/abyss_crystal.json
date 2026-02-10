@@ -1,0 +1,38 @@
+{
+    "parent": "fromtheabyss:root",
+    "criteria": {
+        "0": {
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "fromtheabyss:abyss_crystal"
+                        ]
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        }
+    },
+    "display": {
+        "announce_to_chat": true,
+        "description": {
+            "color": "#6CD0F8",
+            "translate": "advancement.fromtheabyss.root.abyss_crystal.desc"
+        },
+        "frame": "task",
+        "hidden": false,
+        "icon": {
+            "item": "fromtheabyss:abyss_crystal"
+        },
+        "show_toast": true,
+        "title": {
+            "translate": "advancement.fromtheabyss.root.abyss_crystal.title"
+        }
+    },
+    "requirements": [
+        [
+            "0"
+        ]
+    ]
+}

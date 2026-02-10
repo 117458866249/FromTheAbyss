@@ -1,0 +1,38 @@
+{
+    "parent": "fromtheabyss:root/abyss_integrationer/abyss_alloy/abyss_alloy_block",
+    "criteria": {
+        "0": {
+            "conditions": {
+                "items": [
+                    {
+                        "items": [
+                            "fromtheabyss:abyss_storage"
+                        ]
+                    }
+                ]
+            },
+            "trigger": "minecraft:inventory_changed"
+        }
+    },
+    "display": {
+        "announce_to_chat": true,
+        "description": {
+            "color": "#6CD0F8",
+            "translate": "advancements.fromtheabyss.root.abyss_integrationer.abyss_alloy.abyss_alloy_block.abyss_storage.desc"
+        },
+        "frame": "task",
+        "hidden": false,
+        "icon": {
+            "item": "fromtheabyss:abyss_storage"
+        },
+        "show_toast": true,
+        "title": {
+            "translate": "advancements.fromtheabyss.root.abyss_integrationer.abyss_alloy.abyss_alloy_block.abyss_storage.title"
+        }
+    },
+    "requirements": [
+        [
+            "0"
+        ]
+    ]
+}

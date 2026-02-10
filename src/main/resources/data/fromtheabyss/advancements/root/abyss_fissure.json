@@ -1,0 +1,30 @@
+{
+    "parent": "fromtheabyss:root",
+    "criteria": {
+        "0": {
+            "conditions": {},
+            "trigger": "minecraft:tick"
+        }
+    },
+    "display": {
+        "announce_to_chat": true,
+        "description": {
+            "color": "#6CD0F8",
+            "translate": "advancement.fromtheabyss.root.abyss_fissure.desc"
+        },
+        "frame": "task",
+        "hidden": false,
+        "icon": {
+            "item": "fromtheabyss:abyss_fissure"
+        },
+        "show_toast": true,
+        "title": {
+            "translate": "advancement.fromtheabyss.root.abyss_fissure.title"
+        }
+    },
+    "requirements": [
+        [
+            "0"
+        ]
+    ]
+}

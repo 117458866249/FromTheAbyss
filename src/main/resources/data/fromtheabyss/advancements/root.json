@@ -1,0 +1,30 @@
+{
+    "criteria": {
+        "0": {
+            "conditions": {},
+            "trigger": "minecraft:tick"
+        }
+    },
+    "display": {
+        "announce_to_chat": false,
+        "background": "fromtheabyss:textures/block/abyss_alloy_block.png",
+        "description": {
+            "color": "#6CD0F8",
+            "translate": "advancement.fromtheabyss.root.desc"
+        },
+        "frame": "task",
+        "hidden": false,
+        "icon": {
+            "item": "fromtheabyss:abyss_alloy_block"
+        },
+        "show_toast": false,
+        "title": {
+            "translate": "advancement.fromtheabyss.root.title"
+        }
+    },
+    "requirements": [
+        [
+            "0"
+        ]
+    ]
+}
