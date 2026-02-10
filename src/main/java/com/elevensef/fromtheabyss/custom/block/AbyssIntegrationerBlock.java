@@ -1,6 +1,6 @@
 package com.elevensef.fromtheabyss.custom.block;
 
-import com.elevensef.fromtheabyss.custom.blockentity.abyssintegrationer.AbyssIntegrationerEntity;
+import com.elevensef.fromtheabyss.custom.blockentity.AbyssIntegrationerEntity;
 import com.elevensef.fromtheabyss.register.ModBlockEntity;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.Level;
@@ -32,9 +32,9 @@ public class AbyssIntegrationerBlock extends BaseEntityBlock {
     public void onRemove(BlockState pState, Level pLevel, BlockPos pPos, BlockState pNewState, boolean pIsMoving) {
         if (pState.getBlock() != pNewState.getBlock()) {
             BlockEntity blockEntity = pLevel.getBlockEntity(pPos);
-            if (blockEntity instanceof AbyssIntegrationerEntity) {
-                ((AbyssIntegrationerEntity) blockEntity).drops();
-            }
+            // if (blockEntity instanceof AbyssIntegrationerEntity) {
+            //     ((AbyssIntegrationerEntity) blockEntity).drops();
+            // }
         }
         super.onRemove(pState, pLevel, pPos, pNewState, pIsMoving);
     }
