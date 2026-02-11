@@ -11,6 +11,7 @@
     "block.fromtheabyss.abyss_integrationer":"Strv m/38型深渊催化剂",
     "block.fromtheabyss.abyss_alloy_block":"Strv m/38型深渊合金块",
     "block.fromtheabyss.abyss_fissure":"Strv m/40 L型深渊裂隙",
+    "block.fromtheabyss.abyss_anchor_temp":"Strv m/40 L型深渊裂隙（活跃型，虚空锚裂隙）",
     "block.fromtheabyss.abyss_storage":"Strv m/41 I型深渊物品存储器",
     "block.fromtheabyss.abyss_storage_output":"Strv m/41 I型深渊物品输出仪",
 
@@ -28,11 +29,11 @@
     "fromtheabyss.tooltip.abyss_integrationer-1":"扔一个青金石与深板岩掉落物在机器下方的那个方块以生产Strv m/38型深渊合金",
     "fromtheabyss.tooltip.abyss_integrationer-2":"不要让此方块下方有岩浆，pw：）",
 
-    "fromtheabyss.tooltip.abyss_anchor-1":"在主世界y=-64的一块基岩上（即你的y坐标为-63时，你脚下的那块基岩）",
+    "fromtheabyss.tooltip.abyss_anchor-1":"在一块基岩上",
     "fromtheabyss.tooltip.abyss_anchor-2":"投掷一个紫水晶，",
     "fromtheabyss.tooltip.abyss_anchor-3":"再空手右键基岩，",
     "fromtheabyss.tooltip.abyss_anchor-4":"那块基岩将变成 Strv m/40 L型深渊裂隙",
-    "fromtheabyss.tooltip.abyss_anchor-5":"但是，其它维度的深渊太空虚了，并不需一定要y=-64的基岩...",
+    "fromtheabyss.tooltip.abyss_anchor-5":"那个基岩必须在世界底层（即基岩破坏器无法破坏）",
     "fromtheabyss.tooltip.abyss_anchor-6":"此时，在Strv m/40 L型深渊裂隙之上放置Strv m/38型深渊合金块，使用Strv m/38型深渊水晶交互 深渊合金块 。",
     "fromtheabyss.tooltip.abyss_anchor-7":"随着合金块与水晶坠入虚空，从地底回来的，便是虚无之Strv m/40 L型虚空锚...",
 
@@ -44,14 +45,13 @@
     "fromtheabyss.tooltip.abyss_storage_output-2":"将物品使用漏斗等将传输元件输入Strv m/41 I型深渊物品存储器后，",
     "fromtheabyss.tooltip.abyss_storage_output-3":"可以使用带有过滤的传输元件（例如有填充物的 漏斗 ）从Strv m/41 I型深渊物品提取器提取物品",
 
-    "fromtheabyss.tooltip.abyss_fissure-1":"在主世界y=-64的一块基岩上（即你的y坐标为-63时，你脚下的那块基岩）",
+    "fromtheabyss.tooltip.abyss_fissure-1":"在一块基岩上",
     "fromtheabyss.tooltip.abyss_fissure-2":"投掷一个紫水晶，",
     "fromtheabyss.tooltip.abyss_fissure-3":"再空手右键基岩，",
     "fromtheabyss.tooltip.abyss_fissure-4":"那块基岩将变成Strv m/40 L型深渊裂隙",
-    "fromtheabyss.tooltip.abyss_fissure-5":"但是，其它维度的深渊太空虚了，直接在任何地方这样的基岩这样做就好...",
+    "fromtheabyss.tooltip.abyss_fissure-5":"那个基岩必须在世界底层（即基岩破坏器无法破坏）",
 
-    "fromtheabyss.tooltip.bedrock_breaker-1":"破坏主世界y坐标 不为-64的基岩",
-    "fromtheabyss.tooltip.bedrock_breaker-2":"但是，其它维度的深渊太空虚了，可以破坏任何基岩...",
+    "fromtheabyss.tooltip.bedrock_breaker-1":"破坏世界上除最底层外的基岩",
 
 
 
@@ -77,7 +77,7 @@
     "advancement.fromtheabyss.root.abyss_crystal.desc": "合成一个Strv m/38型深渊合金",
 
     "advancement.fromtheabyss.root.abyss_fissure.title": "深渊裂隙",
-    "advancement.fromtheabyss.root.abyss_fissure.desc": "现在，你需要制造一个深渊裂隙。深渊裂隙需要你通过在基岩上扔一个紫水晶，再右键那个基岩以制造。如果那个基岩在主世界，其y坐标必须在-64，即您的坐标为-63时，您脚下的方块",
+    "advancement.fromtheabyss.root.abyss_fissure.desc": "现在，你需要制造一个深渊裂隙。深渊裂隙需要你通过在基岩上扔一个紫水晶，再右键那个基岩以制造。那个基岩必须在世界底层（即基岩破坏器无法破坏）",
 
     "advancements.fromtheabyss.root.abyss_crystal.abyss_anchor.title": "在深渊中打下锚点！",
     "advancements.fromtheabyss.root.abyss_crystal.abyss_anchor.desc": "在Strv m/40 L型深渊裂隙之上放置Strv m/38型深渊合金块，使用Strv m/38型深渊水晶交互 深渊合金块 。随着合金块与水晶坠入虚空，从地底回来的，便是虚无之Strv m/40 L型虚空锚...",

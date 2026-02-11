@@ -1,6 +1,6 @@
 package com.elevensef.fromtheabyss.custom.block;
 
-import com.elevensef.fromtheabyss.custom.blockentity.AbyssIntegrationerEntity;
+import com.elevensef.fromtheabyss.custom.blockentity.AbyssAnchorTempEntity;
 import com.elevensef.fromtheabyss.register.ModBlockEntity;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.Level;
@@ -13,8 +13,8 @@ import net.minecraft.world.level.block.state.BlockState;
 
 import javax.annotation.Nullable;
 
-public class AbyssIntegrationerBlock extends BaseEntityBlock {
-    public AbyssIntegrationerBlock(Properties properties) {
+public class AbyssAnchorTemp extends BaseEntityBlock {
+    public AbyssAnchorTemp(Properties properties) {
         super(properties);
     }
 
@@ -31,13 +31,13 @@ public class AbyssIntegrationerBlock extends BaseEntityBlock {
     @Nullable
     @Override
     public BlockEntity newBlockEntity(BlockPos pos, BlockState state) {
-        return new AbyssIntegrationerEntity(pos, state);
+        return new AbyssAnchorTempEntity(pos, state);
     }
 
     @Nullable
     @Override
     public <T extends BlockEntity> BlockEntityTicker<T> getTicker(Level level, BlockState state,BlockEntityType<T> type) {
-        return createTickerHelper(type, ModBlockEntity.ABYSS_INTEGRATIONER.get(),
-                AbyssIntegrationerEntity::tick);
+        return createTickerHelper(type, ModBlockEntity.ABYSS_ANCHOR_TEMP.get(),
+                AbyssAnchorTempEntity::tick);
     }
 }

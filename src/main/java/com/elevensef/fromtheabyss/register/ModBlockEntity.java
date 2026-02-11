@@ -1,6 +1,7 @@
 package com.elevensef.fromtheabyss.register;
 
 import com.elevensef.fromtheabyss.FromTheAbyss;
+import com.elevensef.fromtheabyss.custom.blockentity.AbyssAnchorTempEntity;
 import com.elevensef.fromtheabyss.custom.blockentity.AbyssIntegrationerEntity;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -16,6 +17,11 @@ public class ModBlockEntity {
             BLOCK_ENTITIES.register("abyss_integrationer",()->
                     BlockEntityType.Builder.of(AbyssIntegrationerEntity::new,
                             ModBlock.ABYSS_INTEGRATIONER_B.get()).build(null));
+
+    public static final RegistryObject<BlockEntityType<AbyssAnchorTempEntity>> ABYSS_ANCHOR_TEMP =
+            BLOCK_ENTITIES.register("abyss_anchor_temp",()->
+                    BlockEntityType.Builder.of(AbyssAnchorTempEntity::new,
+                            ModBlock.ABYSS_ANCHOR_TEMP_B.get()).build(null));
 
     public static void register(IEventBus eventBus) { BLOCK_ENTITIES.register(eventBus); }
 }

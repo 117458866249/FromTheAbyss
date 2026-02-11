@@ -1,7 +1,7 @@
 package com.elevensef.fromtheabyss.custom.event;
 
 import com.elevensef.fromtheabyss.FromTheAbyss;
-import com.elevensef.fromtheabyss.Utils;
+import com.elevensef.fromtheabyss.utils.CommandsUtil;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.entity.player.Player;
@@ -31,16 +31,14 @@ public class AbyssFissure extends Block {
         BlockState state = level.getBlockState(pos);
 
         if (!level.isClientSide){
-            if (level.dimension() == Level.OVERWORLD){
-                if (pos.getY() != -64){
-                    return;
-                }
+            if (pos.getY() != level.dimensionType().minY()){
+                return;
             }
 
             if (state.is(Blocks.BEDROCK)){
                 if (hand == InteractionHand.MAIN_HAND){
                     if (item.is(Items.AIR)){
-                        Utils.runCommandForLevelAndPos("execute positioned ~ ~0.5 ~ if entity @e[type=minecraft:item,distance=..1,nbt={Item:{id:\"minecraft:amethyst_shard\"}},limit=1] run function fromtheabyss:abyss_fissure.json",level,pos);
+                        CommandsUtil.runCommandForLevelAndPos("execute positioned ~ ~0.5 ~ if entity @e[type=minecraft:item,distance=..1,nbt={Item:{id:\"minecraft:amethyst_shard\"}},limit=1] run function fromtheabyss:abyss_fissure",level,pos);
                     }
                 }
             }

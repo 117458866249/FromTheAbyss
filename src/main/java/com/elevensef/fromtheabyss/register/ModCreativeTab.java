@@ -33,6 +33,7 @@ public class ModCreativeTab {
 
                         //   m/40 L
                         pOutput.accept(ModBlock.ABYSS_FISSURE.get());
+                        pOutput.accept(ModBlock.ABYSS_ANCHOR_TEMP.get());
 
                         //   m 41 I
                         pOutput.accept(ModBlock.ABYSS_STORAGE.get());
