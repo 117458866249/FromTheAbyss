@@ -17,7 +17,7 @@ public class AbyssFissure extends BlockItem {
         super(pBlock, pProperties);
     }
 
-    //tooltip
+    // Tooltip
     @Override
     public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
         if(Screen.hasShiftDown()){

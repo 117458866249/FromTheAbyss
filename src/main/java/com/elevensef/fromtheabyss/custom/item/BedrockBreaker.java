@@ -16,7 +16,7 @@ public class BedrockBreaker extends Item {
         super(pProperties);
     }
 
-    //tooltip
+    // Tooltip
     @Override
     public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
         if(Screen.hasShiftDown()){

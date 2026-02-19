@@ -17,8 +17,6 @@ public class FromTheAbyss
 
     public FromTheAbyss(FMLJavaModLoadingContext context)
     {
-        MinecraftForge.EVENT_BUS.register(this);
-
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
         MinecraftForge.EVENT_BUS.register(this);
 
